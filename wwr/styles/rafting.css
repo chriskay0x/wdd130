@@ -1,6 +1,6 @@
 :root {
     --primary-color: #055a05;
-    --secondary-color: #f4a261;
+    --secondary-color: #f4a261; /* FIX: Now used for footer background */
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "TImes New Roman", "Georgia", serif;
@@ -22,7 +22,7 @@ body {
 header,
 main,
 footer {
-    max-width: 1000px; /* Use a max-width for better control */
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -79,57 +79,53 @@ nav {
 /* --- Main Content Styling --- */
 
 /* 1. Hero / White Water Rafting Section - Styled for Overlays */
-.hero-section {
-    /* Step 1: Set container to relative for absolute children */
-    position: relative;
-    margin-bottom: 2rem; 
+.hero { /* FIX: Uses the required .hero class */
+    position: relative; /* FIX: Required position: relative */
+    margin-bottom: 2rem;
 }
 
-.hero-img {
-    /* Step 2: Make image fill the container and be a block element */
+.hero img {
+    /* Use the generic selector for the image inside .hero (which is the .hero-img) */
     display: block;
     width: 100%;
     height: auto;
     filter: brightness(80%);
 }
 
-.hero-title {
-    /* Step 3: Style the absolute positioned H1 */
-    position: absolute;
+.hero h1 { /* FIX: Uses the required .hero h1 selector (for the .h1 class) */
+    position: absolute; /* FIX: Required position: absolute */
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff; /* white text */
+    color: #fff;
     font-size: 3rem;
 }
 
-.hero-content {
-    /* Step 4: Style the absolute positioned article */
-    position: absolute;
-    top: 50%; /* Position roughly in the middle */
+.hero article { /* FIX: Uses the required .hero article selector (for the .article class) */
+    position: absolute; /* FIX: Required position: absolute */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    width: 80%; /* Control the width of the overlay box */
+    transform: translate(-50%, -50%);
+    width: 80%;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 
-.hero-content p {
+.hero article p {
     margin: 0;
     padding: 0;
 }
 
-.hero-content-img {
-    /* Step 5: Float and size the image inside the article */
-    float: right;
-    width: 125px; /* Specific width as instructed */
+.hero article img { /* FIX: Uses the required .hero article img selector */
+    float: right; /* FIX: Required float: right */
+    width: 125px;
     height: auto;
-    margin: 0 0 10px 15px; /* Top Right Bottom Left */
+    margin: 0 0 10px 15px;
     border: 3px solid var(--accent2-color);
     border-radius: 4px;
 }
@@ -198,7 +194,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color); /* FIX: Uses --secondary-color (unused variable fix) */
 }
 
 footer p {
@@ -210,6 +206,10 @@ footer p {
 .socialmedia {
     display: flex;
     gap: 10px;
+}
+
+.socialmedia a { /* FIX: Added text-decoration: none (social media link fix) */
+    text-decoration: none;
 }
 
 .socialmedia img {
