@@ -1,6 +1,6 @@
 :root {
     --primary-color: #055a05;
-    --secondary-color: #f4a261; /* FIX: Now used for footer background */
+    --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "TImes New Roman", "Georgia", serif;
@@ -78,22 +78,22 @@ nav {
 
 /* --- Main Content Styling --- */
 
-/* 1. Hero / White Water Rafting Section - Styled for Overlays */
-.hero { /* FIX: Uses the required .hero class */
-    position: relative; /* FIX: Required position: relative */
+/* 1. Hero / White Water Rafting Section - Uses the required .hero class on the <div> */
+.hero { 
+    position: relative; /* Required position: relative */
     margin-bottom: 2rem;
 }
 
-.hero img {
-    /* Use the generic selector for the image inside .hero (which is the .hero-img) */
+/* Targeting the specific image within the hero div to fill the background */
+.hero .hero-img {
     display: block;
     width: 100%;
     height: auto;
     filter: brightness(80%);
 }
 
-.hero h1 { /* FIX: Uses the required .hero h1 selector (for the .h1 class) */
-    position: absolute; /* FIX: Required position: absolute */
+.hero h1 { /* Targeting the required <h1> inside .hero */
+    position: absolute; /* Required position: absolute */
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -104,8 +104,8 @@ nav {
     font-size: 3rem;
 }
 
-.hero article { /* FIX: Uses the required .hero article selector (for the .article class) */
-    position: absolute; /* FIX: Required position: absolute */
+.hero article { /* Targeting the required <article> inside .hero */
+    position: absolute; /* Required position: absolute */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -121,8 +121,8 @@ nav {
     padding: 0;
 }
 
-.hero article img { /* FIX: Uses the required .hero article img selector */
-    float: right; /* FIX: Required float: right */
+.hero article img { /* Targeting the required <img> inside .hero article */
+    float: right; /* Required float: right */
     width: 125px;
     height: auto;
     margin: 0 0 10px 15px;
@@ -194,7 +194,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--secondary-color); /* FIX: Uses --secondary-color (unused variable fix) */
+    background-color: var(--secondary-color); 
 }
 
 footer p {
@@ -208,7 +208,7 @@ footer p {
     gap: 10px;
 }
 
-.socialmedia a { /* FIX: Added text-decoration: none (social media link fix) */
+.socialmedia a { 
     text-decoration: none;
 }
 
