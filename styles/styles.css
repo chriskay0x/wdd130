@@ -1,10 +1,27 @@
 
+nav {
+    background-color: #444;
+    padding: 1rem;
+}
+nav a {
+    color: white;
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+}
+
+h1 {
+    color: darkblue;
+}
 main {
     max-width: 840px;
 }
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid tomato;
+    padding: .5rem;
+    box-shadow: #333;
 }
 p {
     padding: 0;
