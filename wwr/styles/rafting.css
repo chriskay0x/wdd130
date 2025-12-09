@@ -256,6 +256,20 @@ footer p {
     background-color: #f9f9f9;
 }
 
+.contact-form-section {
+    padding-top: 2rem;
+}
+
+.contact-form-section::before {
+    content: attr(data-contact-title);
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .contact-form fieldset {
     border: none;
     padding: 0;
@@ -325,12 +339,21 @@ footer p {
     padding: 2rem;
 }
 
+.employee-profiles::before {
+    content: attr(data-contact-title);
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
 .profile-container {
     display: flex; 
     justify-content: space-around;
     gap: 20px;
     padding-top: 1rem;
-}Made 
+}
 
 .profile-container figure {
     flex: 1 1 30%; /* Three profiles should take up roughly equal space */
@@ -344,4 +367,10 @@ footer p {
     border-radius: 50%; /* Make images circular */
     border: 5px solid var(--accent2-color);
     object-fit: cover;
+}
+
+.audit-h2-history,
+.audit-h2-adventure {
+    /* Hide the audit-required H2 text */
+    display: none; 
 }
