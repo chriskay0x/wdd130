@@ -397,6 +397,11 @@ footer p {
     filter: brightness(85%);
 }
 
+.home-hero .article {
+    /* Hide the entire article if it contains only placeholder content */
+    display: none; 
+}
+
 .hero-cta-overlay {
     position: absolute;
     top: 50%;
