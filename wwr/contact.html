@@ -8,7 +8,7 @@
     <meta name="description"
         content="Contact White Water Rafting to ask a question, request a reservation, or subscribe to our monthly newsletter. Get in touch today!">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>Contact Us | White Water Rafting</title>
+    <title>Contact Us | White Water Rafting Company</title>
 </head>
 
 <body>
@@ -24,64 +24,72 @@
         </nav>
     </header>
     <main>
-        <div class="contact-info-header">
+        <div class="hero">
+            <img src="./images/rafter-bg.jpg" alt="Contact Page Hero Image Placeholder" class="hero-img" />
+
             <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street</p>
-            <p>Kolob, California</p>
-            <p>+1 999 999 9999</p>
-            <p>info@whitewater.com</p>
+
+            <article class="article">
+            </article>
         </div>
 
-        <div class="contact-grid">
+        <section class="contact-form-section">
+            <h2 class="contact-h2">Contact Information & Form</h2>
 
-            <div class="map-box">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15444.606399187313!2d-113.14923588147852!3d37.38138980838805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b200b347b2ff93%3A0xc6c76088806201a0!2sKolob%20Canyon%20Viewpoint%2C%20Utah%2084720%2C%20USA!5e0!3m2!1sen!2sng!4v1701768822533!5m2!1sen!2sng"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    title="Google Maps location for White Water Rafting">
-                </iframe>
+            <div class="contact-info-header">
+                <p>123 Main River Street, Kolob, California</p>
+                <p>+1 999 999 9999</p>
+                <p>info@whitewater.com</p>
             </div>
 
-            <form class="contact-form">
-                <fieldset>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" placeholder="Placeholder" required>
-                </fieldset>
+            <div class="contact-grid">
 
-                <fieldset>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="user_email" placeholder="Placeholder" required>
-                </fieldset>
+                <div class="map-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15444.606399187313!2d-113.14923588147852!3d37.38138980838805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b200b347b2ff93%3A0xc6c76088806201a0!2sKolob%20Canyon%20Viewpoint%2C%20Utah%2084720%2C%20USA!5e0!3m2!1sen!2sng!4v1701768822533!5m2!1sen!2sng"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Google Maps location for White Water Rafting">
+                    </iframe>
+                </div>
 
-                <fieldset class="radio-group">
-                    <legend>Message Purpose</legend>
+                <form class="contact-form">
+                    <fieldset>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Placeholder" required>
+                    </fieldset>
 
-                    <input type="radio" id="general" name="message_purpose" value="general" checked>
-                    <label for="general">General Inquiry</label>
+                    <fieldset>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="user_email" placeholder="Placeholder" required>
+                    </fieldset>
 
-                    <input type="radio" id="reservation" name="message_purpose" value="reservation">
-                    <label for="reservation">Reservation Question</label>
+                    <fieldset class="radio-group">
+                        <legend>Message Purpose</legend>
+                        <input type="radio" id="general" name="message_purpose" value="general" checked>
+                        <label for="general">General Inquiry</label>
+                        <input type="radio" id="reservation" name="message_purpose" value="reservation">
+                        <label for="reservation">Reservation Question</label>
+                        <input type="radio" id="website" name="message_purpose" value="website">
+                        <label for="website">Website Suggestion</label>
+                    </fieldset>
 
-                    <input type="radio" id="website" name="message_purpose" value="website">
-                    <label for="website">Website Suggestion</label>
-                </fieldset>
+                    <fieldset>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="user_message" rows="4" placeholder="Type here"></textarea>
+                    </fieldset>
 
-                <fieldset>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="user_message" rows="4" placeholder="Type here"></textarea>
-                </fieldset>
+                    <fieldset>
+                        <input type="checkbox" id="newsletter" name="newsletter_subscribe">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    </fieldset>
 
-                <fieldset>
-                    <input type="checkbox" id="newsletter" name="newsletter_subscribe">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                </fieldset>
-
-                <button type="submit">Get In Touch!</button>
-            </form>
-        </div>
+                    <button type="submit">Get In Touch!</button>
+                </form>
+            </div>
+        </section>
 
         <section class="employee-profiles">
-            <h2>We Are Here to Serve You</h2>
+            <h2 class="adventure-h2">We Are Here to Serve You</h2>
             <div class="profile-container">
                 <figure>
                     <img src="./images/employee-1.jpg" alt="Photo of John Smith, CEO" />
@@ -99,7 +107,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 | White Water Rafting | SAMUEL IHECHILURU</p>
+        <p>© 2025 | White Water Rafting | SAMUEL IHECHILURU</p>
         <nav class="socialmedia">
             <a href="https://facebook.com">
                 <img src="./images/facebook.png" alt="Facebook Icon" />
