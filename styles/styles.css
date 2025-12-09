@@ -21,7 +21,7 @@ main img {
     height: auto;
     border: 1px solid tomato;
     padding: .5rem;
-    box-shadow: #333;
+    box-shadow: 2px 2px 5px #ccc;
 }
 p {
     padding: 0;
